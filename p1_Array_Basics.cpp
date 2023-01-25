@@ -32,7 +32,7 @@ int main()
     cout<<sizeof(C)<<endl;
     cout<<C[1]<<endl;
     printf("%d\n\n", C[2]);
-    printf("%d\n\n", C[5]);
+    printf("%d\n\n", C[5]); //Check see difference. 
 
     // for loop
     int D[10]={2,3,5,6,10};
