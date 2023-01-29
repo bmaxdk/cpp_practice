@@ -31,6 +31,11 @@ printf("%d", *p) dereferencing
 
 using namespace std;
 
+struct Rectangle
+{
+    int length;
+    int breadth;
+};
 
 int main()
 {
@@ -77,7 +82,7 @@ int main()
     cout<<"Using Heap"<<endl;
     // Create with heap
     int *ph;
-    ph = new int[5];
+    ph = new int[5]; // Dynamically create array using heap
     ph[0]=2;
     ph[1]=0;
     ph[2]=3;
@@ -86,6 +91,36 @@ int main()
     for (int i=0; i<5; i++){
         cout<<ph[i]<<endl;
     } 
+
+    // free(ph) // C
+    delete[ ] ph; //c++
+
+    
+    // Try with structure//
+    int *ps1;
+    char *ps2;
+    float *ps3;
+    double *ps4;
+    struct Rectangle *ps5, location;
+
+    // location.breadth =5;
+    // location.length = 19;
+    ps5 = &location;
+
+    
+    ps5->length = 1;
+    ps5->breadth = 3;
+    cout<<"print"<<endl;
+    printf("length = %i\nbreadth = %i\n", ps5->length, ps5->breadth);
+    // cout<< ps5->length<<endl;
+
+    // *Every pointer will take same amout of memory. 8 bytes
+    // *So whatever the type of pointer is independent size of pointer is independent of its data types
+    cout<<sizeof(ps1)<<endl;
+    cout<<sizeof(ps2)<<endl;
+    cout<<sizeof(ps3)<<endl;
+    cout<<sizeof(ps4)<<endl;
+    cout<<sizeof(ps5)<<endl;
 
 
 
