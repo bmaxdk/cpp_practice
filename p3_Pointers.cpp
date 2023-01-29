@@ -60,6 +60,17 @@ int main()
 
     cout<<"*pointer= "<<*pointer<<endl;
     cout<<"pointer= "<<pointer<<endl;
+
+    cout<<"Assign address"<<endl;
+    const static int &aa = *p;
+
+    cout<<"aa= "<<aa<<endl;
+    cout<<"p= "<<p<<endl;
+    cout<<"*p= "<<*p<<endl;
+    cout<<"&aa= "<<&aa<<endl;
+
+    cout<<"*pointer= "<<*pointer<<endl;
+    cout<<"pointer= "<<pointer<<endl;
     
     int A[4] ={1,2,3,4};
     int *pa;
@@ -121,6 +132,19 @@ int main()
     cout<<sizeof(ps3)<<endl;
     cout<<sizeof(ps4)<<endl;
     cout<<sizeof(ps5)<<endl;
+
+    printf("Address reference");
+    // struct Rectangle ref;
+
+    struct Rectangle &ref = *ps5;
+
+    
+    printf("length = %i\nbreadth = %i\n", ref.length, ref.breadth);
+    cout<<sizeof(ref)<<endl;
+
+    ref.length = 10;
+
+    printf("length = %i\nbreadth = %i\n", ps5->length, ps5->breadth);
 
 
 
