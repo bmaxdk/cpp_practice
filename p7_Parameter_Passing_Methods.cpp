@@ -32,4 +32,6 @@ int main()
     swap2(&x,&y);
     printf("Swap2\nx=%d\ny=%d\n", x, y);
 
+    return 0;
+
 }
