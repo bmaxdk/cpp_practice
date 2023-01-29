@@ -76,11 +76,12 @@ int main()
     c = {1,0,0};
 
     //Create deck of card follow this
-    struct Card deck[52]={{1,0,0}, {2,0,0}, {3,0,0}};; // 52 * 6 bytes = 312 bytes for this
+    struct Card deck[52]={{1,0,0}, {2,0,0}, {3,0,0}};; // 52 * 6 bytes = 312 bytes for this. Here we assume 2 byes for each in machin will show 4 bytes each. 
     // deck = {{1,0,0}, {2,0,0}, {3,0,0}}; You cannot do this to initialize
     // To do so,
     deck[0] = {4,1,1};
-    printf("%d, %d, %d", deck[0].face,deck[1].face,deck[2].face);
+    printf("%d, %d, %d\n", deck[0].face,deck[1].face,deck[2].face);
+    printf("size of struct = %li\n", sizeof(deck));
 
     return 0;
 }
