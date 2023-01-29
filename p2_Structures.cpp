@@ -1,5 +1,8 @@
 #include<iostream>
 #include<stdio.h>
+#include<cstring>
+#include<string>
+#include<typeinfo>
 /*
 Structure
 1) Defining Structure
@@ -50,10 +53,10 @@ int main()
     // Student   
     struct Student s;
     s.roll = 10;
-    s.name = "John";
-    s.depth = "Engineering";
-    s.address = "Seattle"; 
-
-    // printf("one student information: \nroll:%d\nname: %C\ndepartment: %C\naddress: %C\n",s.roll, s.name, s.depth, s.address);
+    strcpy(s.name, "Howard");
+    strcpy(s.depth, "Engineering");
+    strcpy(s.address, "Seattle"); 
+    cout<<"type of this s.name: "<<typeid(s.name).name()<<endl;
+    printf("one student information: \nroll:%d\nname: %s\ndepartment: %s\naddress: %s\n",s.roll, s.name, s.depth, s.address);
     return 0;
 }
