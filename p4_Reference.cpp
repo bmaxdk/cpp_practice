@@ -1,5 +1,8 @@
 /*
 Reference
+type &r : ampersand r
+Have to initialize.
+ex. int a =10; int &r = a;
 */
 
 #include<iostream>
@@ -14,7 +17,8 @@ int main()
 
     cout <<"a = "<< a<<endl;
     r++;
-    cout<<"r = "<<r<<endl;
-    cout <<"a = "<< a<<endl;
+    cout<<"r = "<<r<<endl<<"a = "<< a<<endl;
+    cout << sizeof(a)<<endl<<sizeof(r)<<endl;
 
+    return 0;
 }
