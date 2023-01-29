@@ -1,5 +1,7 @@
 #include<iostream>
-
+/*
+Domonstration for parameter passing
+*/
 using namespace std;
 
 // * call by reference
