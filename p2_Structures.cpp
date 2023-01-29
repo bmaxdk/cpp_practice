@@ -37,6 +37,13 @@ struct Student
     char address[50]; //50
 };
 
+// Card
+struct Card
+{
+    int face; //2
+    int shape; //2
+    int color; //2
+};// Total 6bytes
 
 int main()
 {
@@ -58,5 +65,22 @@ int main()
     strcpy(s.address, "Seattle"); 
     cout<<"type of this s.name: "<<typeid(s.name).name()<<endl;
     printf("one student information: \nroll:%d\nname: %s\ndepartment: %s\naddress: %s\n",s.roll, s.name, s.depth, s.address);
+
+    struct Card c;
+    // single create card
+    c.face=1;
+    c.shape=0;
+    c.color=0;
+
+    //initialize way to create
+    c = {1,0,0};
+
+    //Create deck of card follow this
+    struct Card deck[52]={{1,0,0}, {2,0,0}, {3,0,0}};; // 52 * 6 bytes = 312 bytes for this
+    // deck = {{1,0,0}, {2,0,0}, {3,0,0}}; You cannot do this to initialize
+    // To do so,
+    deck[0] = {4,1,1};
+    printf("%d, %d, %d", deck[0].face,deck[1].face,deck[2].face);
+
     return 0;
 }
