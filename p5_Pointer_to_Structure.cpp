@@ -26,7 +26,7 @@ int main()
     cout<<r.length<<", "<<r.breadth<<endl<<c->length<<", "<<c->breadth<<endl; 
     cout<<sizeof(r)<<endl<<sizeof(c)<<endl;
     
-    printf("A: struct in heap");
+    printf("A: struct in heap\n");
     static Rectangle *p;
 
     p = new Rectangle; //rectangle structure in heap
@@ -51,10 +51,12 @@ int main()
 
 
     printf("B: struct in heap");
+    // This is just test. You can skip this part
 
+    //
     static Rectangle *p2;
 
-    p2 = new Rectangle[5]; //rectangle structure in heap2
+    p2 = new Rectangle[5]; //You don't have to do in here
     p2->length = 11;
     p2->breadth =22;
     p2[1].length =40;
