@@ -7,13 +7,6 @@ Array can be pass only by address.
 
 using namespace std;
 
-int * fun(int n)
-{
-    int *p;
-    p = new int[5];
-    return p;
-}
-
 void printfun(int A[], int n)
 {
     for(int i=0; i<n; i++)
@@ -31,6 +24,12 @@ void printfun2(int *A, int n)
     }
 }
 
+int * fun(int n)
+{
+    int *p;
+    p = new int[5];
+    return p;
+}
 
 int main()
 {
