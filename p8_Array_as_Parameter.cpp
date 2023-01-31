@@ -38,6 +38,7 @@ int main()
     printfun(A, 5);
     printfun2(A,5);
 
+    cout<<"sizeof A = "<<sizeof(A)/sizeof(int)<<endl;
     int *B;
     B = fun(5);
     B[0] = 3;
@@ -49,6 +50,10 @@ int main()
     printfun2(B, 5);
 
     printfun(B, 5);
+    cout<<"sizeof B/sizeof(int) = "<<sizeof(B)/sizeof(int)<<endl;
+    cout<<"sizeof B = "<<sizeof(B)<<endl;
+    cout<<"sizeof int = "<<sizeof(int)<<endl;
+
     delete[] B;
 
 

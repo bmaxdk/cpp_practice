@@ -4,6 +4,7 @@
         "typeinfo": "cpp",
         "iostream": "cpp",
         "string_view": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "new": "cpp"
     }
 }
