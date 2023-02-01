@@ -95,7 +95,7 @@ int main()
     printf("l = %i, b = %i\n", rptr3->length, rptr3->breadth);
 
     cout<<"Try Array"<<endl<<endl;;
-
+    
     Ar a= {{1,2,3,4,5}};
     print_array_struct(a);
     for (int x:a.array)
@@ -106,6 +106,7 @@ int main()
     for (int x:a2.array)
     cout<<x<<endl;
     cout<<endl;
+    cout<<"both function will be modified which is dangerous sometimes"<<endl;
 
     return 0;
 }
