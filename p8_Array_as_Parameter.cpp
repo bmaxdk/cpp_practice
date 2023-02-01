@@ -59,6 +59,7 @@ int main()
     cout<<"sizeof B/sizeof(int) = "<<sizeof(B)/sizeof(int)<<endl;
     cout<<"sizeof B = "<<sizeof(B)<<endl;
     cout<<"sizeof int = "<<sizeof(int)<<endl;
+    cout<<"This issue, you cannot use this for pointer!! Keep in mind. In pointer size is not what you expected it is!"
 
     cout<<"also"<<endl;
     for (int x:A)
