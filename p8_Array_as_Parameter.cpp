@@ -22,6 +22,7 @@ void printfun2(int *A, int n)
     {
         cout<<A[i]<<endl;
     }
+
 }
 
 int * fun(int n)
@@ -53,6 +54,12 @@ int main()
     cout<<"sizeof B/sizeof(int) = "<<sizeof(B)/sizeof(int)<<endl;
     cout<<"sizeof B = "<<sizeof(B)<<endl;
     cout<<"sizeof int = "<<sizeof(int)<<endl;
+
+    cout<<"also"<<endl;
+    for (int x:A)
+    {
+        cout<<x<<endl;
+    }
 
     delete[] B;
 
