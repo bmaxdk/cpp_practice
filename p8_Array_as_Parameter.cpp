@@ -1,6 +1,11 @@
 /*
 
 Array can be pass only by address.
+This bottom you cannot use it for pointer! keep in mind
+    for (int x:A)
+    {
+        cout<<x<<endl;
+    }
 */
 
 #include<iostream>
