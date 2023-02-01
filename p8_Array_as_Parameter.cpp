@@ -37,6 +37,15 @@ int * fun(int n)
     return p;
 }
 
+int * fun2(int size)
+{
+    int *p;
+    p=new int[size];
+    for (int i=0; i<size;i++)
+    p[i]=i+1;
+    
+    return p;
+}
 int main()
 {
 
@@ -53,13 +62,18 @@ int main()
     B[3] = 6;
     B[4] = 7;
 
+    int *ptr, size = 5;
+    ptr = fun2(size);
+    for(int i=0; i<size;i++)
+    cout<<ptr[i]<<endl;
+
     printfun2(B, 5);
 
     printfun(B, 5);
     cout<<"sizeof B/sizeof(int) = "<<sizeof(B)/sizeof(int)<<endl;
     cout<<"sizeof B = "<<sizeof(B)<<endl;
     cout<<"sizeof int = "<<sizeof(int)<<endl;
-    cout<<"This issue, you cannot use this for pointer!! Keep in mind. In pointer size is not what you expected it is!"
+    cout<<"This issue, you cannot use this for pointer!! Keep in mind. In pointer size is not what you expected it is!"<<endl;;
 
     cout<<"also"<<endl;
     for (int x:A)
