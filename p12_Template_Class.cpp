@@ -52,4 +52,6 @@ int main()
     Arithmatic<int> ar(3,11);
     cout<<ar.add()<<endl;
     cout<<ar.sub()<<endl;
+
+    return 0;
 }
