@@ -42,6 +42,15 @@ typedef struct Ar
     int array[5];
 }Ar;
 
+int * returnarr(Ar A)
+{
+    int * ptrA = new int[5];
+    ptrA = A.array;
+    return ptrA;
+    
+}
+
+
 void print_array_struct(Ar A)
 {
     A.array[0]=200;
@@ -106,7 +115,11 @@ int main()
     for (int x:a2.array)
     cout<<x<<endl;
     cout<<endl;
-    cout<<"both function will be modified which is dangerous sometimes"<<endl;
+    cout<<"As shown this only reference part will change"<<endl;
 
+    returnarr(a);
+    for (int x:a.array)
+    cout<<x<<endl;
+    cout<<endl;
     return 0;
 }
