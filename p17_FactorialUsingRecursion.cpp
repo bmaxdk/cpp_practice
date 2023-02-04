@@ -14,7 +14,15 @@ using namespace std;
 
 int rNfactorial(int n)
 {
-    // if((0==n)||(0==1))
+    try{
+        if (n<0){
+            return 0;// throw;
+        }
+    } 
+    catch(...){
+        cout<<"Provide non-negative value"<<endl;
+    }
+
     if (n==0)
         return 1;
     return rNfactorial(n-1) * n;
@@ -31,6 +39,10 @@ int iNfactorial(int n)
 int main()
 {
     cout<<rNfactorial(4)<<endl;
-
     cout<<iNfactorial(4)<<endl;
+
+    cout<<rNfactorial(-4)<<endl;
+
+
+    // cout<<iNfactorial(4)<<endl;
 }
