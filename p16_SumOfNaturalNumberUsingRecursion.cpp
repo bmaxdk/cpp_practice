@@ -25,7 +25,7 @@ sum(n) =
 #include<iostream>
 
 using namespace std;
-
+//recursive sum
 int rsum(int n)
 {
     if (n==0)
@@ -33,11 +33,13 @@ int rsum(int n)
     return rsum(n-1)+n;
 }
 
+//constant sum
 int csum(int n)
 {
     return n*(n+1)/2;
 }
 
+//iterative sum
 int isum(int n)
 {
     int i,s=0;
