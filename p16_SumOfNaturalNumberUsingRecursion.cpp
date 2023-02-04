@@ -50,9 +50,9 @@ int sum3(int n)
 int main()
 {
     // For best case use formula instead of using recursion
-    cout<< sum2(10)<<endl; //time O(1) 
+    cout<< sum2(10)<<endl; //time O(1)  space O(1)
 
-    cout<< sum3(10)<<endl; // time O(n) 
-    cout<< sum(10)<<endl; //  time O(n) 
+    cout<< sum3(10)<<endl; // time O(n) space O(1)
+    cout<< sum(10)<<endl; //  time O(n) space O(n)
     return 0;
 }
