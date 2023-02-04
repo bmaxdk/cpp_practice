@@ -26,19 +26,19 @@ sum(n) =
 
 using namespace std;
 
-int sum(int n)
+int rsum(int n)
 {
     if (n==0)
         return 0;
-    return sum(n-1)+n;
+    return rsum(n-1)+n;
 }
 
-int sum2(int n)
+int csum(int n)
 {
     return n*(n+1)/2;
 }
 
-int sum3(int n)
+int isum(int n)
 {
     int i,s=0;
     for(i=1; i<=n; i++)
@@ -50,9 +50,9 @@ int sum3(int n)
 int main()
 {
     // For best case use formula instead of using recursion
-    cout<< sum2(10)<<endl; //time O(1)  space O(1)
+    cout<< csum(10)<<endl; //time O(1)  space O(1)
 
-    cout<< sum3(10)<<endl; // time O(n) space O(1)
-    cout<< sum(10)<<endl; //  time O(n) space O(n)
+    cout<< isum(10)<<endl; // time O(n) space O(1)
+    cout<< rsum(10)<<endl; //  time O(n) space O(n)
     return 0;
 }
