@@ -32,8 +32,20 @@ int addref(int &a, int &b) // Heather function. a and b are formal parameter
 int addref2(int &a, int &b) // Heather function. a and b are formal parameter
 {   
     //Function return begin
-    int c;
+    int c, *d;
+    c = a;
+    d = &a;
+    cout<<"c = "<<c<<endl;
+    cout<<"d = "<<d<<endl;
+    cout<<"*d = "<<*d<<endl;
+
+
     a=6;
+    cout<<"c = "<<c<<endl;
+    cout<<"&a = "<<&a<<endl;    
+    cout<<"&c = "<<&c<<endl;
+    cout<<"d = "<<d<<endl;
+    cout<<"*d = "<<*d<<endl;
     c = a+b;
     return c;
 }
@@ -49,5 +61,7 @@ int main()
     cout<<"a="<<a<<endl;
     cout<<addref2(a,b)<<endl; 
     cout<<"a="<<a<<endl;
+    cout<<"&a = "<<&a<<endl;
+
     return 0;
 }
