@@ -39,7 +39,7 @@ int rExponent2(int m, int n)
         return 1;
     if (n%2 == 0)
         return rExponent2(m*m, n/2);
-    return rExponent2(m*m, (n-1)/2) * m;
+    return m * rExponent2(m*m, (n-1)/2);
 }
 
 
