@@ -42,7 +42,10 @@ int rFS2(int n)
 
     return m[n-2]+m[n-1];
 
-}
+} // time O(n)
+
+
+
 int iFS(int n)
 {
     if(n<=1)
