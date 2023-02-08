@@ -82,6 +82,7 @@ int nCr(int n, int r)
 
     return f1/(f2*f3); //1 
 }
+
 int main()
 {
     cout<<c(4,2)<<endl;
