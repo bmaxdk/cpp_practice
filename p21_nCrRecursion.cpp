@@ -63,12 +63,29 @@ int c(int n, int r)
     // Check condition when n==r or r==0 we see that is equals to 1
     if((r==0)||(n==r))
         return 1;
-        
+
     return c(n-1,r-1)+c(n-1,r);
 }
 
+int fact(int n)
+{
+    if(n==0) return 1;
+    return fact(n-1)*n;
+}
+
+int nCr(int n, int r)
+{
+    int f1,f2,f3;
+    f1 = fact(n); // n
+    f2 = fact(r); // n
+    f3 = fact(n-r); //n
+
+    return f1/(f2*f3); //1 
+}
 int main()
 {
     cout<<c(4,2)<<endl;
+
+    cout<<nCr(4,2)<<endl;
     return 0;
 }
