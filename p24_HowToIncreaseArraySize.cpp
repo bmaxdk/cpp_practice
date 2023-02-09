@@ -20,9 +20,9 @@ int main()
     int *q = new int[10];
 
     for(int i=0; i<3; i++) q[i] = p[i]; // copy value from p to q;
-
     //Now q is coppied;
-    delete []p;
+
+    delete []p; //let's free the memory of p
 
     // pointer p is pointed q heap.
     p = q; // now bot p and q is pointed heap address
