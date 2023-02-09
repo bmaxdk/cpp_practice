@@ -29,7 +29,7 @@ int main()
     {
         for(int j=0; j<4; j++)
         {
-            C[i][j]=i+j;
+            C[i][j]=A[i][j];
         }
     }
     cout<<"C"<<endl;
