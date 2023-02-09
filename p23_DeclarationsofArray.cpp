@@ -29,5 +29,6 @@ int main()
     cout<<p[2]<<endl;
     A[6] =300;
     for (int x: A) cout<<x<<endl;// you can't use this for p and index 6 cannot be printed. You cannot update array size like this.
+    
     delete []p; // you don't want memory leak problem so always delete array in pointer once not using
 }
