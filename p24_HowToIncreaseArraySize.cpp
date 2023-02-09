@@ -32,7 +32,7 @@ int main()
 
     // Check
     for(int i=0; i<10; i++) cout<<p[i]<<endl;
-    // for(int i=0; i<10; i++) cout<<q[i]<<endl; // it will give fault ;
+    // for(int i=0; i<10; i++) cout<<q[i]<<endl; // it will give fault error ;
 
     return 0;
 }
