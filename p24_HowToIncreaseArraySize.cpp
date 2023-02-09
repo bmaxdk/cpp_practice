@@ -30,9 +30,8 @@ int main()
     //lets eliminate q pointing heap array.
     q=NULL;
 
-
+    // Check
     for(int i=0; i<10; i++) cout<<p[i]<<endl;
-
     // for(int i=0; i<10; i++) cout<<q[i]<<endl; // it will give fault ;
 
     return 0;
