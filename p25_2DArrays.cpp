@@ -1,5 +1,10 @@
 /*
 3 ways of create 2D Arrays
+
+
+
+Row major formula for 2D arrays
+A[i][j] = L0 +[i*n+j]*w
 */
 
 #include<iostream>
