@@ -5,6 +5,10 @@
 
 Row major formula for 2D arrays
 A[i][j] = L0 +[i*n+j]*w
+
+if start form index 1 then
+A[i][j] = L0 +[(i-1)*n+(j-1)]*w
+
 */
 
 #include<iostream>
