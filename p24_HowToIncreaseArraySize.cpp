@@ -19,7 +19,7 @@ int main()
     // to increase size
     int *q = new int[10];
 
-    for(int i=0; i<3; i++) q[i] = p[i];
+    for(int i=0; i<3; i++) q[i] = p[i]; // copy value from p to q;
 
     //Now q is coppied;
     delete []p;
