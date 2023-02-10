@@ -3,12 +3,19 @@
 
 
 
-Row major formula for 2D arrays
+for mxn matrix
+L0=initial memory address
+w= size of data type
+
+Row major formula for 2D arrays:
 A[i][j] = L0 +[i*n+j]*w
 
 if start form index 1 then
 A[i][j] = L0 +[(i-1)*n+(j-1)]*w
 
+
+Column Major formula for 2D arrays:
+A[i][j] = L0 +[j*m+i]*w
 */
 
 #include<iostream>
