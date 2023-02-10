@@ -12,10 +12,10 @@ Data is kept inside the main memory. During the execution of a program how the p
 p13 to p22
 
 ### Array Representations
-p23 to 
+p23 to p26
 
 ### Array ADT
-
+p27 to
 
 ### Strings
 
