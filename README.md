@@ -12,9 +12,28 @@ Data is kept inside the main memory. During the execution of a program how the p
 p13 to p22
 
 ### Array Representations
+Double pointer, memory and time complexity nD array
+
 p23 to p26
 
 ### Array ADT
+* Data
+ - Array Space
+ - Size
+ - Length
+
+* Operations
+ - Display()
+ - Add(x)/Append(x)
+ - Insert(index, x)
+ - Delete(index)
+ - Search(x)
+ - Get(index)
+ - Set(index, x)
+ - Max()/Min()
+ - Reverse()
+ - Shift()/Rotate()
+ 
 p27 to
 
 ### Strings
