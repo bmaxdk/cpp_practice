@@ -17,12 +17,12 @@ Double pointer, memory and time complexity nD array
 p23 to p26
 
 ### Array ADT
-* Data
+Data
  - Array Space
  - Size
  - Length
 
-* Operations
+Operations
  - Display()
  - Add(x)/Append(x)
  - Insert(index, x)
@@ -33,7 +33,7 @@ p23 to p26
  - Max()/Min()
  - Reverse()
  - Shift()/Rotate()
- 
+
 p27 to
 
 ### Strings
