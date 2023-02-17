@@ -47,10 +47,18 @@ void display(Array arr)
 
 }
 
+void append(Array *arr, int x)
+{
+    // Check Condition
+    if(arr->length < arr->size)
+        arr->A[arr->length++] = x;
+}
 int main()
 {
-    Array arr = {{2,3,4,5,6}, 20, 5};
+    Array arr = {{2,3,4,5,6}, 10, 5};
 
+    // append
+    append(&arr, 10);
     display(arr);
 
     return 0;
