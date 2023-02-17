@@ -87,7 +87,7 @@ int main()
     insert(&arr, 3, 20);
     insert(&arr, -3, 20);
     // Delete
-    Delete(&arr, 3);
+    cout<<Delete(&arr, 3)<<endl;
     display(arr);
 
     return 0;
