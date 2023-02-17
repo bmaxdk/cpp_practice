@@ -53,12 +53,30 @@ void append(Array *arr, int x)
     if(arr->length < arr->size)
         arr->A[arr->length++] = x;
 }
+
+
+void insert(Array *arr, int index, int x)
+{
+    if(index>=0 && arr->length < arr->size)
+    {
+        int cur_index = arr->size;
+        for(cur_index; index < cur_index; cur_index--)
+        {
+            arr->A[cur_index] = arr->A[cur_index-1];
+        }
+        arr->A[index] = x;
+        arr->length++;
+    }
+}
+
 int main()
 {
     Array arr = {{2,3,4,5,6}, 10, 5};
 
     // append
     append(&arr, 10);
+    insert(&arr, 3, 20);
+    insert(&arr, -3, 20);
     display(arr);
 
     return 0;
