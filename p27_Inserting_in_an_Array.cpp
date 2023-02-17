@@ -4,9 +4,6 @@ Array ADT
 size 10
 Length = 6
 */
-#include <iostream>
-
-using namespace std;
 
 // 1.Display
 // printf("%d", A[]);
@@ -19,3 +16,42 @@ using namespace std;
 // Time O(1);
 
 // 3. Insert(index,x)
+// Insert(4,15)
+// you need to move if there is element in 4th element before insert
+// for (int i=Length; i>index; i--)
+//     A[i] = A[i-1]
+// A[index] = x;
+// Length++;
+// You need to check maximum index size all the time so set amount
+// Time max O(n) and min O(1)
+
+
+
+#include <iostream>
+
+using namespace std;
+
+typedef struct Array
+{
+    int A[10];
+    int size;
+    int length;
+} Array;
+
+void display(Array arr)
+{
+    printf("\nElements are \n");
+    for(int i=0; i<arr.length; i++)
+        printf("%d ", arr.A[i]);
+    printf("\n");
+
+}
+
+int main()
+{
+    Array arr = {{2,3,4,5,6}, 20, 5};
+
+    display(arr);
+
+    return 0;
+}
