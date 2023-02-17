@@ -40,6 +40,10 @@ p27: Display(), Add(x)/Append(x), Insert(index, x)
 
 * It will useful to see how usage of pointer for increment such as `arr->A[arr->length++] = x;`
 
+Search
+
+p29 Linear Search
+
 ### Strings
 
 
