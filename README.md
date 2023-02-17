@@ -12,9 +12,11 @@ Data is kept inside the main memory. During the execution of a program how the p
 p13 to p22
 
 ### Array Representations
-Double pointer, memory and time complexity nD array
+* The key here is `Double Pointer`, memory and time complexity nD array
 
 p23 to p26
+
+* Check double pointer works p23 to p25
 
 ### Array ADT
 Data
@@ -34,7 +36,9 @@ Operations
  - Reverse()
  - Shift()/Rotate()
 
-p27 to
+p27: Display(), Add(x)/Append(x), Insert(index, x)
+
+* It will useful to see how usage of pointer for increment such as `arr->A[arr->length++] = x;`
 
 ### Strings
 
