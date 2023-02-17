@@ -83,10 +83,10 @@ int main()
 {
     Array arr = {{2,3,4,5,6}, 10, 5};
 
-    // append
     append(&arr, 10);
     insert(&arr, 3, 20);
     insert(&arr, -3, 20);
+    // Delete
     Delete(&arr, 3);
     display(arr);
 
