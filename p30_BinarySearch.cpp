@@ -93,6 +93,21 @@ int BinarySearch(Array arr, int key)
     return -1;
 }
 
+int RBinarySearch(Array arr, int l, int h, int key)
+{
+    int mid;
+    if(l<=h)
+    {
+        mid = (l+h)/2;
+        if(key == arr.A[mid])
+            return mid;
+        else if(key<arr.A[mid])
+            return RBinarySearch(arr, l, mid-1, key);
+        else
+            return RBinarySearch(arr, mid+1, h, key);
+    }
+    return -1;
+}
 
 int main()
 {
@@ -100,6 +115,7 @@ int main()
     display(arr);
 
     printf("%d\n", BinarySearch(arr, 5));
+    printf("%d\n", RBinarySearch(arr, 0, arr.length-1, 5));
     return 0;
     //
 }
