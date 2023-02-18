@@ -48,3 +48,92 @@ for(i=0; i<Length; i++)
 }
 
 */
+
+
+
+#include<iostream>
+
+using namespace std;
+
+
+typedef struct Array
+{
+    int A[10];
+    int size;
+    int length;
+} Array;
+
+void display(Array arr)
+{
+    printf("\nElements are \n");
+    for(int i=0; i<arr.length; i++)
+        printf("%d ", arr.A[i]);
+    printf("\n");
+
+}
+
+void append(Array *arr, int x)
+{
+    // Check Condition
+    if(arr->length < arr->size)
+        arr->A[arr->length++] = x;
+}
+
+
+void insert(Array *arr, int index, int x)
+{
+    if(index>=0 && arr->length < arr->size)
+    {
+        int cur_index = arr->size;
+        for(cur_index; index < cur_index; cur_index--)
+        {
+            arr->A[cur_index] = arr->A[cur_index-1];
+        }
+        arr->A[index] = x;
+        arr->length++;
+    }
+}
+
+int Delete(Array *arr, int index)
+{
+    int x=0;
+    if(index>=0 && index < arr->length)
+    {
+        x=arr->A[index];
+        for(int i=index; i < arr->length-1; i++)
+            arr->A[i] = arr->A[i+1];
+        arr->length--;
+        return x;
+    }
+    return 0;
+}
+
+
+int LinearSearch(Array arr, int key) //Not using addres since we only searching for the value
+{
+    for(int i=0; i<arr.length; i++)
+    {
+        if(key == arr.A[i])
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main()
+{
+    Array arr = {{2,3,4,5,6}, 10, 5};
+
+    // append(&arr, 10);
+    // insert(&arr, 3, 20);
+    // insert(&arr, -3, 20);
+    // // Delete
+    // cout<<Delete(&arr, 3)<<endl;
+
+    printf("%d\n", LinearSearch(arr, 6));
+
+    display(arr);
+
+    return 0;
+}
