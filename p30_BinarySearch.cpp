@@ -117,5 +117,4 @@ int main()
     printf("%d\n", BinarySearch(arr, 5));
     printf("%d\n", RBinarySearch(arr.A, 0, arr.length-1, 5));
     return 0;
-    //
 }
