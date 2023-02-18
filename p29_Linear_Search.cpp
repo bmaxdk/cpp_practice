@@ -25,4 +25,18 @@ return -1;
 //Time O(n)
 
 
+
+# Improving Linear Search
+1. Transposition: Whenver you repeatly search swap the previous one
+for(i=0; i<Length; i++)
+{
+    if(key==A[i])
+    {
+        swap(A[i], A[i-1]);
+        return i-1;
+    }
+}
+
+2. Move to Front/Head: Swap with first element which improve linear search
+
 */
