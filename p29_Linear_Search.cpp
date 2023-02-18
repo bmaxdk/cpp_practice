@@ -38,5 +38,13 @@ for(i=0; i<Length; i++)
 }
 
 2. Move to Front/Head: Swap with first element which improve linear search
+for(i=0; i<Length; i++)
+{
+    if(ket==A[i])
+    {
+        swap(A[i], A[0]);
+        return 0;
+    }
+}
 
 */
