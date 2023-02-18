@@ -108,6 +108,13 @@ int Delete(Array *arr, int index)
     return 0;
 }
 
+void swap(int *a, int *b)
+{
+    int temp;
+    temp=*a;
+    *a = *b;
+    *b = temp;
+}
 
 int LinearSearch(Array arr, int key) //Not using addres since we only searching for the value
 {
@@ -121,6 +128,36 @@ int LinearSearch(Array arr, int key) //Not using addres since we only searching 
     return -1;
 }
 
+int ImproveLinearSearch(Array *arr, int key) //Now using addres since we are modifying
+{
+    for(int i=0; i<arr->length; i++)
+    {
+        if(key == arr->A[i])
+        {
+            swap(&arr->A[i], &arr->A[i-1]);
+
+            return i-1;
+        }
+    }
+    return -1;
+}
+
+int ImproveLinearSearch2(Array *arr, int key) //Now using addres since we are modifying
+{
+    for(int i=0; i<arr->length; i++)
+    {
+        if(key == arr->A[i])
+        {
+            swap(&arr->A[i], &arr->A[0]);
+
+            return 0;
+        }
+    }
+    return -1;
+}
+
+
+
 int main()
 {
     Array arr = {{2,3,4,5,6}, 10, 5};
@@ -132,8 +169,12 @@ int main()
     // cout<<Delete(&arr, 3)<<endl;
 
     printf("%d\n", LinearSearch(arr, 6));
-
     display(arr);
 
+    printf("%d\n", ImproveLinearSearch(&arr, 6));
+    display(arr);
+
+    printf("%d\n", ImproveLinearSearch2(&arr, 6));
+    display(arr);
     return 0;
 }
