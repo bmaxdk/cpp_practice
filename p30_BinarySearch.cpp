@@ -43,6 +43,9 @@ Algorithm RBinarySearch(l,h, key)
 // It is tail reculsive
 
 * itrative is better since this recursive is keep stack
+
+
+Time O(log n)
 */
 
 #include<iostream>
