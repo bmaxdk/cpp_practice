@@ -44,7 +44,7 @@ Algorithm RBinarySearch(l,h, key)
 
 * itrative is better since this recursive is keep stack
 
-
+(logn * 2^(logn))/n = logn * n /n = log n
 Time O(log n)
 */
 
