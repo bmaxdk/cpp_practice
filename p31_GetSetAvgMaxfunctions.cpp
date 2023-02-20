@@ -139,7 +139,7 @@ int main()
     Set(&arr,3,100);
     display(arr);
     cout<<Max(arr)<<endl;
-    printf("Sum = %d\nAvg = %d\n", Sum(arr), Avg(arr));
+    printf("Sum = %d\nAvg = %f\n", Sum(arr), Avg(arr));
 
     return 0;
 }
