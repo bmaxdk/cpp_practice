@@ -108,12 +108,12 @@ public:
             if(A[i]<B.Get(j))
                 C.Set(k++,A[i++]);
             else
-                C.Set(k++,A[j++]);
+                C.Set(k++,B.Get(j++));
         }
         for(;i<length;i++)
             C.Set(k++,A[i]);
         for(;j<length;j++)
-            C.Set(k++,A[j]);
+            C.Set(k++,B.Get(j));
         
         return C;
         
