@@ -248,6 +248,9 @@ public:
 
 int main()
 {
+    int r =3;
+    cout << r/2<< endl;
+    return 0;
     Array X(10, 5, true);
     Array Y(10, 4, true);
 
